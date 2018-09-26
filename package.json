@@ -9,6 +9,10 @@
   "keywords": [
     "mongoosify"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modelair/mongoosify"
+  },
   "author": "modelair",
   "license": "ISC",
   "dependencies": {
