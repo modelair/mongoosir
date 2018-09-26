@@ -1,0 +1,18 @@
+{
+  "name": "mongoosify",
+  "version": "1.0.0",
+  "description": "schema utils for mongoose",
+  "main": "mongoosify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoosify"
+  ],
+  "author": "modelair",
+  "license": "ISC",
+  "dependencies": {
+    "modelair": "^1.0.1",
+    "mongoose": "^5.1.1"
+  }
+}
