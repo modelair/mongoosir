@@ -80,7 +80,7 @@ const clear = (fields, model) => {
 const isValidObjectId = objectId => typeof objectId === 'string' && objectId.length === 24 && /^[a-f0-9]+$/i.test(objectId)
 const asObjectId = value => mongoose.Types.ObjectId(value)
 const compareIds = (is, equal) => is.toString() === equal.toString()
-export default {
+module.exports = {
   asObjectId,
   clearMongoFields,
   clearSpecials,

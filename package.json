@@ -1,6 +1,6 @@
 {
   "name": "mongoosir",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "schema utils for mongoose",
   "main": "index.js",
   "scripts": {

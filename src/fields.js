@@ -142,7 +142,7 @@ const uri = {
   required: [true, 'uriRequired'],
   default: ''
 }
-export default {
+module.exports = {
   about,
   code,
   contact,
