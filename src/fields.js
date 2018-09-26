@@ -1,4 +1,4 @@
-import patterns from './patterns'
+const patterns = require('./patterns')
 const address = {type: String, match: patterns.address}
 const defaultString = {type: String, default: ''}
 const defaultNumber = {type: Number, default: 0}

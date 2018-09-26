@@ -1,6 +1,5 @@
-
-import mongoose from 'mongoose'
-import modelair from 'modelair'
+const mongoose = require('mongoose')
+const modelair = require('modelair')
 
 const ObjectID = mongoose.Schema.Types.ObjectId
 const modelToSchema = (model) => new mongoose.Schema(modifyCopyModel(model))
