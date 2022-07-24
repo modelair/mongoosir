@@ -1,5 +1,5 @@
 import mongoose from  'mongoose'
-import modelair from 'modelair'
+
 
 const ObjectID = mongoose.Schema.Types.ObjectId
 const modelToSchema = (model) => new mongoose.Schema(modifyCopyModel(model))
@@ -9,7 +9,7 @@ const __ObjectID = 'mongoose-id'
 
 /// CHECKS OBJECTID FOR MONGOOSE
 const modifyCopyModel = function (_model) {
-  let model = modelair.clone(_model)
+  let model = {..._model}
   for (let item in model) {
     if (!item) return {}
     if (typeof model[item] === 'object') {
@@ -80,7 +80,7 @@ const clear = (fields, model) => {
 const isValidObjectId = objectId => typeof objectId === 'string' && objectId.length === 24 && /^[a-f0-9]+$/i.test(objectId)
 const asObjectId = value => mongoose.Types.ObjectId(value)
 const compareIds = (is, equal) => is.toString() === equal.toString()
-export default {
+export {
   asObjectId,
   clearMongoFields,
   clearSpecials,
