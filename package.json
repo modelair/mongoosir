@@ -1,8 +1,7 @@
 {
   "name": "mongoosir",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "schema utils for mongoose",
-
   "scripts": {
     "test": "node ./index.test.mjs"
   },
@@ -16,6 +15,6 @@
   "author": "modelair",
   "license": "MIT",
   "dependencies": {
-    "mongoose": "^5.1.1"
+    "mongoose": "^6.5.2"
   }
 }
